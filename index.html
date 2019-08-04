@@ -131,7 +131,7 @@ var bar= svg.selectAll('mybar')
     })
     .on("mouseout", function() { tooltip.style("opacity", 0) })
     ;
-    document.getElementById("year").innerHTML="year:1970-1980  number of terrisom attack/people was killed"+ratio(f,kill[0]) ;
+    document.getElementById("year").innerHTML="year:1970-1980  people was killed/number of terrisom attack "+ratio(f,kill[0]) ;
     d3.select("#mySlider").on("change", function(d){
     selectedValue = this.value
     updateslider(selectedValue)
@@ -169,7 +169,7 @@ bar
     .on("mouseout", function() { tooltip.style("opacity", 0) })
     ;
     console.log(index)
-    document.getElementById("year").innerHTML="year:"+selectedGroup+"  number of terrisom attack/people was killed"+ratio(filter,kill_year[index]) ;
+    document.getElementById("year").innerHTML="year:"+selectedGroup+"people was killed/number of terrisom attack "+ratio(filter,kill_year[index]) ;
 
 
 
@@ -201,7 +201,7 @@ bar
     ;
 
 
-document.getElementById("year").innerHTML="year:"+selectedGroup+"number of terrisom attack/people was killed"+ratio(filter,kill[sel.selectedIndex]) ;
+document.getElementById("year").innerHTML="year:"+selectedGroup+"people was killed/number of terrisom attack "+ratio(filter,kill[sel.selectedIndex]) ;
 
 
     }
